@@ -2,16 +2,59 @@
 
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>سایت شخصی من</title>
+  </head>
+  <body>
+    <main>
+      <h1>سلام! به سایت من خوش آمدید 👋</h1>
+	  <img src="/images.jfif" alt="عکس من" class="circle-img" />
+         <p>این اولین تجربه من در ساخت سایت است. من در حال یادگیری آسترو (Astro) هستم و اینجا را کم‌کم توسعه می‌دهم.</p>
+
+      <h2>چیزهایی که یاد گرفته‌ام:</h2>
+      <ul>
+        <li>ساخت سایت با فریم‌ورک آسترو</li>
+        <li>کار با گیت‌هاب و کنترل ورژن</li>
+        <li>هاست کردن رایگان روی کلودفلر</li>
+      </ul>
+
+      <p>به زودی تصاویر و مقالاتی هم در اینجا قرار خواهم داد!</p>
+    </main>
+
+    <style>
+      /* این کدها فقط برای اینکه سایت شما زیباتر شود نوشته شده‌اند */
+      body {
+        font-family: Tahoma, Arial, sans-serif;
+        line-height:2;
+        background-color:#;
+        color: #333;
+        padding: 40px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      h1 {
+        color: #4c2929;
+        border-bottom: 3px solid #e13751;
+        padding-bottom: 10px;
+      }
+      h2 {
+        color: #e7125d;
+        margin-top: 30px;
+      }
+	  .circle-img {
+        /* این خط جادویی باعث میشه عکس روی کامپیوتر بزرگ باشه، ولی روی موبایل کوچک بشه تا از صفحه بیرون نزنه */
+        width: min(250px, 70vw); 
+        aspect-ratio: 1 / 1; /* این خط باعث میشه با تغییر سایز، عکس همیشه دایره بمونه و بیضی نشه */
+        border-radius: 50%; 
+        object-fit: cover; 
+        border: 4px solid #f06292; 
+        margin: 20px auto; /* فاصله از بالا و پایین، و چسبیدن به وسط */
+        display: block; /* این کد باعث میشه دستور وسط چین کردن درست کار کند */
+      }
+    </style>
+  </body>
 </html>
+
